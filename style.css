@@ -102,6 +102,8 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+/* rgb(165, 57, 57); */
+
 .menu-links a {
   display: block;
   padding: 10px;
