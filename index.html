@@ -6,15 +6,15 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
+    <!-- <script src="./app.js"></script> -->
     <title>My Portfolio</title>
   </head>
-  <body>
+  <body id="home">
     <nav id="desktop-nav">
-      <div class="logo">viniarski</div>
+      <div class="logo" draggable="true">viniarski.</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -28,12 +28,11 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
     <section id="profile">
@@ -78,203 +77,145 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <!-- <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div> -->
         <div class="about-details-container">
           <div class="text-container">
             <p>
               Passionate web developer skilled in both front-end and back-end
               technologies. Committed to crafting user-friendly websites with a
-              keen eye to design and functionality. Known for problem-solving
-              abilities and collaborative mindset.
+              keen eye to design and functionality. I understand that the user
+              interface is the forefront of any online presence, and I am
+              committed to delivering designs that not only captivate the
+              audience but also enhance the overall user experience.
             </p>
           </div>
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                Continuous Professional<br />
-                Full Stack Development
-              </p>
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/html.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/css.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/js.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/ts.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/react.png" alt="react icon" class="icon" />
+                  <div>
+                    <h3>React.js</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/figma.png" alt="figma icon" class="icon" />
+                  <div>
+                    <h3>Figma</h3>
+                  </div>
+                </article>
+              </div>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="education icon"
-                class="icon"
-              />
-              <h3>Education / Courses</h3>
-              <p>Full Stack MERN Bootcamp<br />Tech Educators</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              With a keen eye for detail and a strong sense of aesthetics, I
-              strive to ensure that every website I work on not only meets but
-              exceeds user expectations. I understand that the user interface is
-              the forefront of any online presence, and I am committed to
-              delivering designs that not only captivate the audience but also
-              enhance the overall user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Exlopre My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React.js</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NPM</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git / GitHub</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Terminal</h3>
-                  <p></p>
-                </div>
-              </article>
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/node.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node JS</h3>
+                    <p></p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/jQ.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>jQuery</h3>
+                    <p></p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/sql.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PostgreSQL</h3>
+                    <p></p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/git.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p></p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/github.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>GitHub</h3>
+                    <p></p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/consol.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Terminal</h3>
+                    <p></p>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
@@ -402,8 +343,8 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
           </ul>
         </div>
