@@ -219,6 +219,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 10px;
 }
 
 .btn {
@@ -360,8 +361,9 @@ article .icon {
 }
 
 .project-btn {
-  color: black;
+  color: white;
   border-color: rgb(163, 163, 163);
+  padding: 2px;
 }
 
 /* contact section */
@@ -413,4 +415,103 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* ================================================================= */
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.495);
+}
+
+.container {
+  height: 420px;
+  display: flex;
+}
+
+.commentary p {
+  color: #d7d7d7;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 50px;
+  background-size: cover;
+  background-color: black;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 0.25s;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.595);
+  cursor: pointer;
+}
+
+.card > .panel {
+  color: white;
+  display: flex;
+}
+
+.card > .panel > .commentary {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.586);
+  opacity: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .commentary {
+  opacity: 1 !important;
+}
+
+.card[for='no-1'] {
+  background-image: url('./assets/project-1.png');
+  background-position: center;
+}
+
+.card[for='no-2'] {
+  background-image: url('./assets/project-2.png');
+  background-position: center;
+}
+
+.card[for='no-3'] {
+  background-image: url('./assets/project-3.png');
+  background-position: center;
+}
+
+.p-project {
+  padding: 0 30px;
+  font-size: 12px;
+}
+
+.h-project {
+  font-size: 18px;
+  padding: 0 30px;
+}
+
+.box-projects {
+  justify-content: normal;
+  padding-top: 10%;
 }
