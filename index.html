@@ -9,32 +9,34 @@
     <!-- <script src="./app.js"></script> -->
     <title>My Portfolio</title>
   </head>
-  <body id="home">
-    <nav id="desktop-nav">
-      <div class="logo">viniarski<span class="dot">.</span></div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">viniarski<span class="dot">...</span></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+  <body>
+    <header id="home">
+      <nav id="desktop-nav">
+        <div class="logo">viniarski<span class="dot">.</span></div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <ul class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">viniarski<span class="dot">...</span></div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <section id="profile">
       <div class="section__pic-container">
         <img
@@ -227,16 +229,18 @@
         onclick="location.href='./#projects'"
       />
     </section>
+    <!-- porject section  -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <main class="box box-projects">
-        <div class="container">
-          <input type="radio" name="segment" id="no-1" />
-          <label for="no-1" class="card">
+
+      <div class="about-containers">
+        <!-- porject 1 -->
+        <div class="details-container no-1">
+          <h2 class="experience-sub-title">Cookie Clicker</h2>
+          <div class="article-container">
             <div class="panel">
               <div class="commentary">
-                <h2 class="h-project">COOKIE CLICKER</h2>
                 <p class="p-project">
                   Project Cookie Clicker is a browser-based incremental game
                   developed during a bootcamp, challenging players to click
@@ -259,12 +263,14 @@
                 </div>
               </div>
             </div>
-          </label>
-          <input type="radio" name="segment" id="no-2" checked />
-          <label for="no-2" class="card">
+          </div>
+        </div>
+        <!-- porject 2 -->
+        <div class="details-container no-2">
+          <h2 class="experience-sub-title">Image Gallery</h2>
+          <div class="article-container">
             <div class="panel">
               <div class="commentary">
-                <h2 class="h-project">IMAGE GALLERY</h2>
                 <p class="p-project">
                   The image gallery project utilizes the Unsplash API to
                   dynamically fetch and display high-quality images, providing
@@ -286,12 +292,14 @@
                 </div>
               </div>
             </div>
-          </label>
-          <input type="radio" name="segment" id="no-3" />
-          <label for="no-3" class="card">
+          </div>
+        </div>
+        <!-- porject 3 -->
+        <div class="details-container no-3">
+          <h2 class="experience-sub-title">Flamin' Beef Burger</h2>
+          <div class="article-container">
             <div class="panel">
               <div class="commentary">
-                <h2 class="h-project">FLAMIN' BEEF BURGER</h2>
                 <p class="p-project">
                   The responsive restaurant website, complete with an integrated
                   booking system, seamlessly adapts to various devices while
@@ -314,9 +322,10 @@
                 </div>
               </div>
             </div>
-          </label>
+          </div>
         </div>
-      </main>
+        <!-- end div about-->
+      </div>
 
       <img
         src="./assets/arrow.png"
