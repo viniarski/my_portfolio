@@ -40,11 +40,11 @@ a,
 }
 
 /* splash */
-/* 
-.picture {
-  z-index: -1;
-}
 
+/* .picture {
+  z-index: -1;
+} */
+/* 
 .splash {
   top: 0;
   left: 10;
@@ -153,6 +153,7 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  z-index: 1;
 }
 
 .hamburger-icon.open span:first-child {
