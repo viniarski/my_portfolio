@@ -48,6 +48,21 @@
   }
 }
 
+@media (max-width: 900px) {
+  .no-parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .no-4 {
+    display: none;
+  }
+
+  .no-4-p {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   #contact,
   footer {

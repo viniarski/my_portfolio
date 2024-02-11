@@ -6,13 +6,13 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
-    <!-- <script src="./app.js"></script> -->
+    <script src="./app.js" defer></script>
     <title>My Portfolio</title>
   </head>
   <body>
     <header id="home">
       <nav id="desktop-nav">
-        <div class="logo">viniarski<span class="dot">.</span></div>
+        <div class="logo">viniarski<span class="dot">...</span></div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -37,16 +37,17 @@
         </div>
       </nav>
     </header>
-    <section id="profile">
+    <section id="profile" class="on-the-back">
       <div class="section__pic-container">
         <img
           src="./assets/profile-pic.png"
           alt="Michal Winiarski profile picture"
+          class="picture"
         />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Michal Winiarski</h1>
+        <h1 class="title my-name">Michal Winiarski</h1>
         <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
@@ -234,20 +235,13 @@
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
 
-      <div class="about-containers">
+      <div class="about-containers no-parent">
         <!-- porject 1 -->
         <div class="details-container no-1">
-          <h2 class="experience-sub-title">Cookie Clicker</h2>
           <div class="article-container">
             <div class="panel">
               <div class="commentary">
-                <p class="p-project">
-                  Project Cookie Clicker is a browser-based incremental game
-                  developed during a bootcamp, challenging players to click
-                  cookies for points and purchase upgrades to increase their
-                  production.
-                </p>
-                <div class="btn-container">
+                <div class="btn-container-pro">
                   <button
                     class="btn btn-color-2 project-btn"
                     onclick="window.open('https://github.com/viniarski/cookie_clicker', '_blank')"
@@ -265,18 +259,20 @@
             </div>
           </div>
         </div>
+        <p class="p-project">
+          Project <span class="p-style">Cookie Clicker </span>is a browser-based
+          incremental <span class="p-style">game</span> developed during a
+          bootcamp, challenging players to click cookies for points and purchase
+          upgrades to increase their production.
+          <span class="p-style">JavaScript</span> and
+          <span class="p-style">DOM manipulation / local storage</span>.
+        </p>
         <!-- porject 2 -->
         <div class="details-container no-2">
-          <h2 class="experience-sub-title">Image Gallery</h2>
           <div class="article-container">
             <div class="panel">
               <div class="commentary">
-                <p class="p-project">
-                  The image gallery project utilizes the Unsplash API to
-                  dynamically fetch and display high-quality images, providing
-                  users with a visually engaging browsing experience.
-                </p>
-                <div class="btn-container">
+                <div class="btn-container-pro">
                   <button
                     class="btn btn-color-2 project-btn"
                     onclick="window.open('https://github.com/viniarski/image_gallery', '_blank')"
@@ -294,19 +290,18 @@
             </div>
           </div>
         </div>
+        <p class="p-project">
+          The image <span class="p-style">gallery</span> project utilizes the
+          Unsplash <span class="p-style">API</span> to dynamically
+          <span class="p-style">fetch</span> and display high-quality images,
+          providing users with a visually engaging browsing experience.
+        </p>
         <!-- porject 3 -->
         <div class="details-container no-3">
-          <h2 class="experience-sub-title">Flamin' Beef Burger</h2>
           <div class="article-container">
             <div class="panel">
               <div class="commentary">
-                <p class="p-project">
-                  The responsive restaurant website, complete with an integrated
-                  booking system, seamlessly adapts to various devices while
-                  offering customers the convenience of making reservations
-                  online.
-                </p>
-                <div class="btn-container">
+                <div class="btn-container-pro">
                   <button
                     class="btn btn-color-2 project-btn"
                     onclick="window.open('https://github.com/viniarski/flamin_beef_burger', '_blank')"
@@ -324,6 +319,47 @@
             </div>
           </div>
         </div>
+        <p class="p-project">
+          The <span class="p-style">responsive</span> restaurant
+          <span class="p-style">Full Stackwebsite</span>, complete with an
+          integrated <span class="p-style">booking system</span>, seamlessly
+          adapts to various devices while offering customers the convenience of
+          making reservations online. Database
+          <span class="p-style">better-sqlite3</span> &
+          <span class="p-style">npm express</span>
+        </p>
+        <!-- porject 4 -->
+        <div class="details-container no-4">
+          <div class="article-container">
+            <div class="panel">
+              <div class="commentary">
+                <div class="btn-container-pro">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://github.com/viniarski/Big_Cats', '_blank')"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://viniarski.github.io/Big_Cats/', '_blank')"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="p-project no-4-p">
+          The <span class="p-style">HTML</span> and
+          <span class="p-style">CSS</span> gallery showcases seven stunning
+          images of majestic wild cats, each commanding attention with their
+          powerful presence and striking beauty. Through clever design and
+          layout, the gallery highlights the grace and ferocity of lions,
+          tigers, leopards, and other magnificent felines.
+        </p>
+
         <!-- end div about-->
       </div>
 
@@ -334,6 +370,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
+    <!-- contact section -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -372,13 +409,5 @@
       </nav>
       <p>Copyright &copy; 2024 Viniarski</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        const menu = document.querySelector('.menu-links');
-        const icon = document.querySelector('.hamburger-icon');
-        menu.classList.toggle('open');
-        icon.classList.toggle('open');
-      }
-    </script>
   </body>
 </html>
