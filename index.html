@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website of Michal Winiarski, showcasing projects and contact information. Skilled in front-end and back-end web development technologies."
+    />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
@@ -11,17 +15,29 @@
   <body>
     <header id="home">
       <nav id="desktop-nav">
-        <div class="logo">viniarski<span class="dot">...</span></div>
+        <div class="logo">
+          viniarski<span class="dot-1">.</span><span class="dot-2">.</span
+          ><span class="dot-3">.</span>
+        </div>
         <div>
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" aria-label="hiperlink to about">About</a></li>
+            <li>
+              <a href="#projects" aria-label="hiperlink to projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" aria-label="hiperlink to contact">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
       <nav id="hamburger-nav">
-        <div class="logo">viniarski<span class="dot">...</span></div>
+        <div class="logo">
+          viniarski<span class="dot-1">.</span><span class="dot-2">.</span
+          ><span class="dot-3">.</span>
+        </div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
@@ -29,9 +45,30 @@
             <span></span>
           </div>
           <ul class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li>
+              <a
+                href="#about"
+                aria-label="hiperlink to about"
+                onclick="toggleMenu()"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                aria-label="hiperlink to projects"
+                onclick="toggleMenu()"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                aria-label="hiperlink to contact"
+                onclick="toggleMenu()"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -42,20 +79,35 @@
           src="./assets/profile-pic2.png"
           alt="Michal Winiarski profile picture"
           class="picture"
+          aria-label="profile picture"
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title my-name">Michal Winiarski</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p1" aria-label="Hello, I'm">Hello, I'm</p>
+        <h1 class="title my-name" aria-label="Michal Winiarski">
+          Michal Winiarski
+        </h1>
+        <div class="frontend-div">
+          <p
+            class="section__text__p2 sec-text text"
+            aria-label="frontend developer"
+          >
+            Frontend Developer
+          </p>
+        </div>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
+            aria-label="button to download cd in pdf"
             onclick="window.open('https://docs.google.com/document/d/1LklA4DOjG4VdhYjuXBoZvP2Vljeg4wK3zPqqY5mjYrA/edit?usp=sharing', '_blank')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-1"
+            aria-label="button contact info"
+            onclick="location.href='./#contact'"
+          >
             Contact info
           </button>
         </div>
@@ -64,12 +116,14 @@
             src="./assets/linkedin.png"
             alt="my LinkedIn profile"
             class="icon"
+            aria-label="icon with hiperlink to viniarski linkedin"
             onclick="window.open('https://www.linkedin.com/in/viniarski/', '_blank')"
           />
           <img
             src="./assets/github.png"
             alt="my Github profile"
             class="icon"
+            aria-label="icon with jiperlink to viniarski hithub"
             onclick="window.open('https://github.com/viniarski', '_blank')"
           />
         </div>
@@ -231,8 +285,10 @@
     </section>
     <!-- porject section  -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <p class="section__text__p1" aria-label="browe=se my recent">
+        Browse My Recent
+      </p>
+      <h1 class="title" aria-label="projects">Projects</h1>
 
       <div class="about-containers no-parent">
         <!-- porject 1 -->
@@ -243,12 +299,14 @@
                 <div class="btn-container-pro">
                   <button
                     class="btn btn-color-2 project-btn"
+                    aria-label="button to repository on hithub"
                     onclick="window.open('https://github.com/viniarski/cookie_clicker', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
+                    aria-label="button to live demo project"
                     onclick="window.open('https://viniarski.github.io/cookie_clicker/', '_blank')"
                   >
                     Live Demo
@@ -258,7 +316,7 @@
             </div>
           </div>
         </div>
-        <p class="p-project">
+        <p class="p-project" aria-label="paragraph about project">
           Project <span class="p-style">Cookie Clicker </span>is a browser-based
           incremental <span class="p-style">game</span> developed during a
           bootcamp, challenging players to click cookies for points and purchase
@@ -274,12 +332,14 @@
                 <div class="btn-container-pro">
                   <button
                     class="btn btn-color-2 project-btn"
+                    aria-label="button to repository on hithub"
                     onclick="window.open('https://github.com/viniarski/image_gallery', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
+                    aria-label="button to live demo project"
                     onclick="window.open('https://viniarski.github.io/image_gallery/', '_blank')"
                   >
                     Live Demo
@@ -289,7 +349,7 @@
             </div>
           </div>
         </div>
-        <p class="p-project">
+        <p class="p-project" aria-label="paragraph about project">
           The image <span class="p-style">gallery</span> project utilizes the
           Unsplash <span class="p-style">API</span> to dynamically
           <span class="p-style">fetch</span> and display high-quality images,
@@ -303,12 +363,14 @@
                 <div class="btn-container-pro">
                   <button
                     class="btn btn-color-2 project-btn"
+                    aria-label="button to repository on hithub"
                     onclick="window.open('https://github.com/viniarski/flamin_beef_burger', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
+                    aria-label="button to live demo project"
                     onclick="window.open('https://flamin-beef-burger.onrender.com/', '_blank')"
                   >
                     Live Demo
@@ -318,7 +380,7 @@
             </div>
           </div>
         </div>
-        <p class="p-project">
+        <p class="p-project" aria-label="paragraph about project">
           <span class="p-style">Full Stack</span> website, complete with an
           integrated <span class="p-style">booking system</span>, seamlessly
           adapts to various devices while offering customers the convenience of
@@ -334,12 +396,14 @@
                 <div class="btn-container-pro">
                   <button
                     class="btn btn-color-2 project-btn"
+                    aria-label="button to repository on hithub"
                     onclick="window.open('https://github.com/viniarski/Big_Cats', '_blank')"
                   >
                     Github
                   </button>
                   <button
                     class="btn btn-color-2 project-btn"
+                    aria-label="button to live demo project"
                     onclick="window.open('https://viniarski.github.io/Big_Cats/', '_blank')"
                   >
                     Live Demo
@@ -349,7 +413,7 @@
             </div>
           </div>
         </div>
-        <p class="p-project no-4-p">
+        <p class="p-project no-4-p" aria-label="paragraph about project">
           The <span class="p-style">HTML</span> and
           <span class="p-style">CSS</span> gallery showcases seven stunning
           images of majestic wild cats, each commanding attention with their
@@ -366,29 +430,41 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
+        aria-label="arrow to next section: contact"
       />
     </section>
     <!-- contact section -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <p class="section__text__p1" aria-label="get in touch">Get in Touch</p>
+      <h1 class="title" aria-label="contact me">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
+            aria-label="email icon"
           />
-          <p><a href="mailto:viniarski@gmail.com">viniarski@gmail.com</a></p>
+          <p>
+            <a
+              href="mailto:viniarski@gmail.com"
+              aria-label="viniarski@gmail.com email address"
+              >viniarski@gmail.com</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <img
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
+            aria-label="linkedin icon"
           />
           <p>
-            <a href="https://www.linkedin.com/in/viniarski/" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/viniarski/"
+              target="_blank"
+              aria-label="linkedin hyperlink"
               >LinkedIn</a
             >
           </p>
@@ -399,9 +475,11 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#home" aria-label="home hyperlink">Home</a></li>
+            <li><a href="#about" aria-label="about hyperlink">About</a></li>
+            <li>
+              <a href="#projects" aria-label="projects hyperlink">Projects</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -415,5 +493,11 @@
         icon.classList.toggle('open');
       }
     </script>
+    <div
+      id="announcer"
+      role="status"
+      aria-live="polite"
+      class="visually_hidden"
+    ></div>
   </body>
 </html>

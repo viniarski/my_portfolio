@@ -39,17 +39,6 @@ a,
   transition: all 300ms ease;
 }
 
-/* splash */
-
-/* .picture {
-  z-index: -1;
-} */
-/* 
-.splash {
-  top: 0;
-  left: 10;
-} */
-
 /* TOP NAV */
 
 nav,
@@ -89,8 +78,19 @@ a:hover {
   cursor: default;
 }
 
-.dot {
-  color: #ffc436;
+.dot-1 {
+  color: #ff4a00;
+}
+
+.dot-2 {
+  color: #ff8802;
+}
+.dot-3 {
+  color: #ff9901;
+}
+
+.frontend-div {
+  display: inline-block;
 }
 
 /* HAMBURGER MENU */
@@ -474,43 +474,6 @@ footer p {
   display: flex;
 }
 
-.commentary p {
-  color: #d7d7d7;
-  margin-bottom: 20px;
-}
-
-.card {
-  width: 50px;
-  background-size: cover;
-  background-color: black;
-  border-radius: 12px;
-  overflow: hidden;
-  margin: 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  transition: 0.25s;
-  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.595);
-  cursor: pointer;
-}
-
-.card > .panel {
-  color: white;
-  display: flex;
-}
-
-.card > .panel > .commentary {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 600px;
-  background-color: rgba(0, 0, 0, 0.586);
-  opacity: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-}
-
 .no-parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -576,4 +539,15 @@ footer p {
 .box-projects {
   justify-content: normal;
   padding-top: 10%;
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
