@@ -40,12 +40,15 @@ a,
 }
 
 /* splash */
+/* 
+.picture {
+  z-index: -1;
+}
 
 .splash {
   top: 0;
   left: 10;
-  z-index: -999;
-}
+} */
 
 /* TOP NAV */
 

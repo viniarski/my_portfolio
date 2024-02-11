@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaqueries.css" />
-    <script src="./app.js" defer></script>
     <title>My Portfolio</title>
   </head>
   <body>
@@ -320,8 +319,7 @@
           </div>
         </div>
         <p class="p-project">
-          The <span class="p-style">responsive</span> restaurant
-          <span class="p-style">Full Stackwebsite</span>, complete with an
+          <span class="p-style">Full Stack</span> website, complete with an
           integrated <span class="p-style">booking system</span>, seamlessly
           adapts to various devices while offering customers the convenience of
           making reservations online. Database
@@ -409,5 +407,13 @@
       </nav>
       <p>Copyright &copy; 2024 Viniarski</p>
     </footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.menu-links');
+        const icon = document.querySelector('.hamburger-icon');
+        menu.classList.toggle('open');
+        icon.classList.toggle('open');
+      }
+    </script>
   </body>
 </html>
